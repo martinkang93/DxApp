@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Martin Kang. All rights reserved.
 //
 
+#import <Parse/Parse.h>
 #import "AppDelegate.h"
 
 @implementation AppDelegate
@@ -14,6 +15,8 @@
 {
     // Override point for customization after application launch.
     return YES;
+    
+    [Parse setApplicationId:@"wr6OS74WzQchJj33I6bG1bn6dLbwXo5uHwRlqSwO" clientKey:@"Ocob66wX9B58ai3Uc7LCnQ14SixcYYftFOfKmY0n"];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
