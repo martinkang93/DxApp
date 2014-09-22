@@ -75,16 +75,16 @@
 }
 
 
-//- (IBAction)ClickSubmit:(id)sender {
-    //PFObject *PatientRecord = [PFObject objectWithClassName:@"PatientRecord"];
-    //PatientRecord[@"PatientID"] = PatientID;
-    //PatientRecord[@"MoodRating"] = [NSString stringWithFormat:@"%0.0F", self.MoodSlider.value];
-    //PatientRecord[@"Q1Ans"] = [NSString stringWithFormat:@"%0.0ld", (long)self.YesNoQ.selectedSegmentIndex];
-    //PatientRecord[@"Q2Ans"] = [NSString stringWithFormat:@"%0.0ld", (long)self.TFQ.selectedSegmentIndex];
-    //PatientRecord[@"Message"] = self.AdditionalComplaint.text;
-    //[PatientRecord saveInBackground];
+- (IBAction)ClickSubmit:(id)sender {
+    PFObject *PatientRecord = [PFObject objectWithClassName:@"PatientRecord"];
+    PatientRecord[@"PatientID"] = @"Patient No. 1";
+    PatientRecord[@"MoodRating"] = [NSString stringWithFormat:@"%0.0F", self.MoodSlider.value];
+    PatientRecord[@"Q1Ans"] = [NSString stringWithFormat:@"%0.0ld", (long)self.YesNoQ.selectedSegmentIndex];
+    PatientRecord[@"Q2Ans"] = [NSString stringWithFormat:@"%0.0ld", (long)self.TFQ.selectedSegmentIndex];
+    PatientRecord[@"Message"] = self.AdditionalComplaint.text;
+    [PatientRecord saveInBackground];
     //send data packet to parse
-//}
+}
 
 
 

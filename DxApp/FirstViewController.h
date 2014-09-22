@@ -9,8 +9,6 @@
 #import <Parse/Parse.h>
 #import <UIKit/UIKit.h>
 
-NSString *PatientID;
-
 @interface FirstViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *MoodValue;
 @property (weak, nonatomic) IBOutlet UISlider *MoodSlider;
